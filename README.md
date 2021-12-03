@@ -1,2 +1,1 @@
-# transition_motion_tensor
-Code accompanying our SIGGRAPH 2021 Technical Communications paper "Transition Motion Tensor: A Data-Driven Approach for Versatile and Controllable Agents in Physically Simulated Environments"
+The source codes will be published during the [SIGGRAPH Asia 2021](https://sa2021.siggraph.org/en/) event.
