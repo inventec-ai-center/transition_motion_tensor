@@ -1,0 +1,788 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{4836070b-8a18-4465-9962-1a46244b72bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\render">
+      <UniqueIdentifier>{7fe10a7f-fca0-495e-8a4f-960d4ff93baa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\render\lodepng">
+      <UniqueIdentifier>{b1fb83c9-9ae9-4e7e-8e55-241d832aaef3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util\json">
+      <UniqueIdentifier>{16862341-2e86-4403-b0b7-30200d772592}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\anim">
+      <UniqueIdentifier>{b2d91f01-371f-4b11-9c32-53e41d5338b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sim">
+      <UniqueIdentifier>{6205d514-056e-4364-a26e-9443b4d0ce5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scenes">
+      <UniqueIdentifier>{35a13702-7d59-461e-903f-63444de3a53a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\util\FileUtil.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\util\IndexManager.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\util\JsonUtil.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\util\MathUtil.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\util\Rand.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\util\Trajectory.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\util\ArgParser.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\ShadowMap.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\TextureDesc.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\TextureUtil.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\VertexBuffer.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\Camera.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\DrawMesh.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\DrawUtil.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\GraphUtil.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\IBuffer.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\MeshUtil.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\Shader.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\lodepng\lodepng.cpp">
+      <Filter>Source Files\render\lodepng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\lodepng\lodepng_util.cpp">
+      <Filter>Source Files\render\lodepng</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\util\json\json_reader.cpp">
+      <Filter>Source Files\util\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\util\json\json_value.cpp">
+      <Filter>Source Files\util\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\util\json\json_writer.cpp">
+      <Filter>Source Files\util\json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\scenes\Scene.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\scenes\DrawScene.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\anim\KinCharacter.cpp">
+      <Filter>Source Files\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\anim\KinTree.cpp">
+      <Filter>Source Files\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\anim\Motion.cpp">
+      <Filter>Source Files\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\anim\Character.cpp">
+      <Filter>Source Files\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SpAlg.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\RBDUtil.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\RBDModel.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\World.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimSphere.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimPlane.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimObj.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimCapsule.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimBox.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\Perturb.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\PDController.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\ImpPDController.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\Ground.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\ContactManager.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\GroundPlane.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\Controller.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimCharacter.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\scenes\SceneSimChar.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimCharGeneral.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\DrawSimCharacter.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\DrawGround.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\DrawObj.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\DrawCharacter.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\DrawKinTree.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\DrawPerturb.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\scenes\DrawSceneSimChar.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\DrawWorld.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\CharController.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\CtCtrlUtil.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\CtController.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\CtPDController.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\CtVelController.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\scenes\DrawSceneKinChar.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\scenes\SceneKinChar.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\scenes\RLScene.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\scenes\DrawRLScene.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\scenes\SceneImitate.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimCharBuilder.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\GroundBuilder.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\scenes\SceneBuilder.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\scenes\DrawSceneImitate.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\AgentRegistry.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\scenes\RLSceneSimChar.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\util\Timer.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimBodyLink.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimRigidBody.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimBodyJoint.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\MultiBody.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimCylinder.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\ObjTracer.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\anim\Shape.cpp">
+      <Filter>Source Files\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimJoint.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\util\Annealer.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\ExpPDController.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\PerturbManager.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\MatrixStack.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\DeepMimicCore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\CtrlBuilder.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\DeepMimicCharController.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="CarlMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CarlCore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scenes\CarlSceneKinChar.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="scenes\CarlSceneTaskHeading.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="scenes\CarlSceneTaskImitate.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="scenes\CarlSceneTaskSpeed.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="scenes\DrawCarlRLScene.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="scenes\DrawCarlScene.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="scenes\DrawCarlSceneKinChar.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="scenes\DrawCarlSceneTaskHeading.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="scenes\DrawCarlSceneTaskImitate.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="scenes\DrawCarlSceneTaskSpeed.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="scenes\CarlRLScene.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="scenes\CarlRLSceneSimChar.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="render\DrawUtilExtend.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="render\MeshUtilExtend.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="render\DrawCharacterExtend.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="render\DrawKinTreeExtend.cpp">
+      <Filter>Source Files\render</Filter>
+    </ClCompile>
+    <ClCompile Include="anim\CarlKinTree.cpp">
+      <Filter>Source Files\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="anim\CarlKinCharacter.cpp">
+      <Filter>Source Files\anim</Filter>
+    </ClCompile>
+    <ClCompile Include="util\MathUtilExtend.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\PathApproximator.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\PathFollower.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\FileUtilExtend.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="CarlCore_wrap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="scenes\TMTSceneTemplateController.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="scenes\TMTSceneTransitionRecorder.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="util\MotionTrajectory.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="scenes\DrawTMTSceneTemplateController.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="scenes\DrawTMTSceneTransitionRecorder.cpp">
+      <Filter>Source Files\scenes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\CircularBuffer.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\FileUtil.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\IndexManager.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\JsonUtil.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\MathUtil.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\Rand.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\Trajectory.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\ArgParser.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\ShadowMap.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\TextureDesc.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\TextureUtil.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\VertexBuffer.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\Camera.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\DrawMesh.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\DrawUtil.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\GraphUtil.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\IBuffer.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\MeshUtil.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\RenderState.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\Shader.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\lodepng\lodepng.h">
+      <Filter>Source Files\render\lodepng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\lodepng\lodepng_util.h">
+      <Filter>Source Files\render\lodepng</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\json\json.h">
+      <Filter>Source Files\util\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\json\json_tool.h">
+      <Filter>Source Files\util\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\json\reader.h">
+      <Filter>Source Files\util\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\json\value.h">
+      <Filter>Source Files\util\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\json\version.h">
+      <Filter>Source Files\util\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\json\writer.h">
+      <Filter>Source Files\util\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\json\allocator.h">
+      <Filter>Source Files\util\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\json\assertions.h">
+      <Filter>Source Files\util\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\json\autolink.h">
+      <Filter>Source Files\util\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\json\config.h">
+      <Filter>Source Files\util\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\json\features.h">
+      <Filter>Source Files\util\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\json\forwards.h">
+      <Filter>Source Files\util\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\scenes\Scene.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\scenes\DrawScene.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\anim\KinCharacter.h">
+      <Filter>Source Files\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\anim\KinTree.h">
+      <Filter>Source Files\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\anim\Motion.h">
+      <Filter>Source Files\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\anim\Character.h">
+      <Filter>Source Files\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SpAlg.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\RBDModel.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\RBDUtil.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\World.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimSphere.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimPlane.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimObj.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimBox.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimCapsule.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\Perturb.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\PDController.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\ImpPDController.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\Ground.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\ContactManager.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\GroundPlane.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\Controller.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimCharacter.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\scenes\SceneSimChar.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimCharGeneral.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\DrawSimCharacter.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\DrawGround.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\DrawObj.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\DrawCharacter.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\DrawKinTree.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\DrawPerturb.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\scenes\DrawSceneSimChar.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\DrawWorld.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\CharController.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\CtController.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\CtCtrlUtil.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\CtPDController.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\CtVelController.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\scenes\DrawSceneKinChar.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\scenes\SceneKinChar.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\scenes\RLScene.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\scenes\DrawRLScene.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\scenes\SceneImitate.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimCharBuilder.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\GroundBuilder.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\scenes\SceneBuilder.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\scenes\DrawSceneImitate.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\AgentRegistry.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\scenes\RLSceneSimChar.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\ActionSpace.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\Timer.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimBodyLink.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimRigidBody.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimBodyJoint.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\MultiBody.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimCylinder.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\ObjTracer.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\anim\Shape.h">
+      <Filter>Source Files\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimJoint.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\IndexBuffer.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\Annealer.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\ObjLoader.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\ExpPDController.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\PerturbManager.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\MatrixStack.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\DeepMimicCore.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\CtrlBuilder.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\DeepMimicCharController.h">
+      <Filter>Source Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="CarlCore.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="scenes\CarlRLSceneSimChar.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="scenes\CarlSceneKinChar.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="scenes\CarlSceneTaskHeading.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="scenes\CarlSceneTaskImitate.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="scenes\CarlSceneTaskSpeed.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="scenes\DrawCarlRLScene.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="scenes\DrawCarlScene.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="scenes\DrawCarlSceneKinChar.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="scenes\DrawCarlSceneTaskHeading.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="scenes\DrawCarlSceneTaskImitate.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="scenes\DrawCarlSceneTaskSpeed.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="scenes\CarlRLScene.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="render\DrawKinTreeExtend.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="render\DrawUtilExtend.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="render\MeshUtilExtend.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="render\DrawCharacterExtend.h">
+      <Filter>Source Files\render</Filter>
+    </ClInclude>
+    <ClInclude Include="anim\CarlKinCharacter.h">
+      <Filter>Source Files\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="anim\CarlKinTree.h">
+      <Filter>Source Files\anim</Filter>
+    </ClInclude>
+    <ClInclude Include="util\MathUtilExtend.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\PathApproximator.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\PathFollower.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\FileUtilExtend.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="scenes\TMTSceneTemplateController.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="scenes\TMTSceneTransitionRecorder.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="util\MotionTrajectory.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\tqdm.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="scenes\DrawTMTSceneTemplateController.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="scenes\DrawTMTSceneTransitionRecorder.h">
+      <Filter>Source Files\scenes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="DeepMimicCore.i" />
+  </ItemGroup>
+</Project>

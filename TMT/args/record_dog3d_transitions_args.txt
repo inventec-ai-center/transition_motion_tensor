@@ -1,0 +1,42 @@
+--scene transition_recorder
+
+--rand_seed {RAND_SEED}
+
+--num_update_substeps 10
+--num_sim_substeps 2
+--world_scale 4
+
+--terrain_file data/terrain/plane.txt
+
+--cam_position 0.135827, 1.649429, -8.645550
+--cam_up -0.002943 0.982287 0.187358
+--cam_zoom 1.0
+
+--char_types general
+--character_files data/characters/dog3d.txt
+--enable_char_soft_contact false
+--enable_char_contact_fall false
+--fall_contact_bodies 0 1 2 3 4 5 6 7 11 12 16 20
+
+--char_ctrls ct_pd
+--char_ctrl_files data/controllers/dog3d_ctrl.txt
+--motion_files data/motions/dog3d_pace.txt data/motions/dog3d_trot.txt data/motions/dog3d_canter.txt data/motions/dog3d_jump.txt
+--sync_char_root_pos false
+--sync_char_root_rot false
+--enable_root_rot_fail false
+
+--agent_files data/agents/ct_agent_dog_unified_controller.txt
+--train_agents false
+--normalizer_file data/normalizer/normalizer.npz
+
+--control_mode high_level
+--trajectory_files data/trajectories/dog3d_pace_trajectory.txt data/trajectories/dog3d_trot_trajectory.txt data/trajectories/dog3d_canter_trajectory.txt data/trajectories/dog3d_jump_trajectory.txt
+--motion_names Pace Trot Canter Jump
+
+--primitive_models data/policies/dog3d_pace.ckpt data/policies/dog3d_trot.ckpt data/policies/dog3d_canter.ckpt data/policies/dog3d_jump.ckpt
+--gating_models data/policies/dog3d_pace.ckpt data/policies/dog3d_trot.ckpt data/policies/dog3d_canter.ckpt data/policies/dog3d_jump.ckpt
+
+--pre_transition_time 1
+--post_transition_time 5
+--eval_output_filename {OUTPUT_FILENAME}
+--num_collect_transition_samples {NUM_TRANSITION_SAMPLES}

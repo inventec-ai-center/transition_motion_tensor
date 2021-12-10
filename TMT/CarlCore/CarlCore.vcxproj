@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Swig|Win32">
+      <Configuration>Release_Swig</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Swig|x64">
+      <Configuration>Release_Swig</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{43011113-B968-462C-B99A-539E3E98BC15}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TerrainRL</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>CarlCore</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Swig|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Swig|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Swig|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Swig|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>../../DeepMimic/DeepMimicCore;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Swig|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>../../DeepMimic/DeepMimicCore;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Swig|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>_$(ProjectName)</TargetName>
+    <TargetExt>.pyd</TargetExt>
+    <IncludePath>../../DeepMimic/DeepMimicCore;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);..\..\..\library\Bullet3\src;..\..\..\library\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(CPP_LIB)\bullet3-2.89\src;$(CPP_LIB)\;$(CPP_LIB)\eigen-3.3.7;$(CPP_LIB)\glew-2.2.0\include;$(CPP_LIB)\freeglut\include;$(PYTHON_INCLUDE);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(CPP_LIB)\bullet3-2.89\VS2017\lib\Debug;$(CPP_LIB)\glew-2.2.0\lib\Release\x64;$(CPP_LIB)\freeglut\lib\x64;$(PYTHON_LIB);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glew32.lib;BulletDynamics_Debug.lib;BulletCollision_Debug.lib;LinearMath_Debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);..\..\..\c++_stuff\library\Bullet3\src;..\..\..\c++_stuff\library\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Swig|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);..\..\..\library\Bullet3\src;..\..\..\library\;$(PYTHON_INCLUDE);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(CPP_LIB)\bullet3-2.89\src;$(CPP_LIB)\;$(CPP_LIB)\eigen-3.3.7;$(CPP_LIB)\glew-2.2.0\include;$(CPP_LIB)\freeglut\include;$(PYTHON_INCLUDE);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(CPP_LIB)\bullet3-2.89\VS2017\lib\Release;$(CPP_LIB)\glew-2.2.0\lib\Release\x64;$(CPP_LIB)\freeglut\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glew32.lib;BulletDynamics.lib;BulletCollision.lib;LinearMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Swig|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(CPP_LIB)\bullet3-2.89\src;$(CPP_LIB)\;$(CPP_LIB)\eigen-3.3.7;$(CPP_LIB)\glew-2.2.0\include;$(CPP_LIB)\freeglut\include;$(PYTHON_INCLUDE);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(CPP_LIB)\bullet3-2.89\VS2017\lib\Release;$(CPP_LIB)\glew-2.2.0\lib\Release\x64;$(CPP_LIB)\freeglut\lib\x64;$(PYTHON_LIB);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glew32.lib;BulletDynamics.lib;BulletCollision.lib;LinearMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(ProjectDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\anim\Character.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\anim\KinCharacter.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\anim\KinTree.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\anim\Motion.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\anim\Shape.cpp" />
+    <ClCompile Include="CarlCore_wrap.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="anim\CarlKinCharacter.cpp" />
+    <ClCompile Include="anim\CarlKinTree.cpp" />
+    <ClCompile Include="CarlCore.cpp" />
+    <ClCompile Include="CarlMain.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Swig|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\Camera.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\DrawCharacter.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\DrawGround.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\DrawKinTree.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\DrawMesh.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\DrawObj.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\DrawPerturb.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\DrawSimCharacter.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\DrawUtil.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\DrawWorld.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\GraphUtil.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\IBuffer.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\lodepng\lodepng.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\lodepng\lodepng_util.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\MatrixStack.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\MeshUtil.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\Shader.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\ShadowMap.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\TextureDesc.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\TextureUtil.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\render\VertexBuffer.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\scenes\DrawRLScene.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\scenes\DrawSceneImitate.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\scenes\DrawSceneKinChar.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\scenes\DrawSceneSimChar.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\scenes\RLScene.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\scenes\RLSceneSimChar.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\scenes\SceneImitate.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\scenes\SceneKinChar.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\scenes\Scene.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\scenes\DrawScene.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\scenes\SceneBuilder.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\scenes\SceneSimChar.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\AgentRegistry.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\CharController.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\ExpPDController.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\ObjTracer.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\ContactManager.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\Controller.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\CtController.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\CtCtrlUtil.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\CtPDController.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\CtVelController.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\Ground.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\GroundBuilder.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\GroundPlane.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\ImpPDController.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\MultiBody.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\PerturbManager.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimBodyJoint.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\PDController.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\Perturb.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\RBDModel.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\RBDUtil.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimBox.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimCapsule.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimCharacter.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimCharBuilder.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimCharGeneral.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimBodyLink.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimJoint.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimCylinder.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimObj.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimPlane.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimRigidBody.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SimSphere.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\SpAlg.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\DeepMimicCharController.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\CtrlBuilder.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\sim\World.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\DeepMimicCore.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\util\Annealer.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\util\ArgParser.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\util\FileUtil.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\util\IndexManager.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\util\JsonUtil.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\util\json\json_reader.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\util\json\json_value.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\util\json\json_writer.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\util\MathUtil.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\util\Rand.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\util\Timer.cpp" />
+    <ClCompile Include="..\..\DeepMimic\DeepMimicCore\util\Trajectory.cpp" />
+    <ClCompile Include="render\DrawCharacterExtend.cpp" />
+    <ClCompile Include="render\DrawKinTreeExtend.cpp" />
+    <ClCompile Include="render\DrawUtilExtend.cpp" />
+    <ClCompile Include="render\MeshUtilExtend.cpp" />
+    <ClCompile Include="scenes\CarlRLScene.cpp" />
+    <ClCompile Include="scenes\CarlRLSceneSimChar.cpp" />
+    <ClCompile Include="scenes\CarlSceneKinChar.cpp" />
+    <ClCompile Include="scenes\CarlSceneTaskHeading.cpp" />
+    <ClCompile Include="scenes\CarlSceneTaskImitate.cpp" />
+    <ClCompile Include="scenes\CarlSceneTaskSpeed.cpp" />
+    <ClCompile Include="scenes\DrawCarlRLScene.cpp" />
+    <ClCompile Include="scenes\DrawCarlScene.cpp" />
+    <ClCompile Include="scenes\DrawCarlSceneKinChar.cpp" />
+    <ClCompile Include="scenes\DrawCarlSceneTaskHeading.cpp" />
+    <ClCompile Include="scenes\DrawCarlSceneTaskImitate.cpp" />
+    <ClCompile Include="scenes\DrawCarlSceneTaskSpeed.cpp" />
+    <ClCompile Include="scenes\DrawTMTSceneTemplateController.cpp" />
+    <ClCompile Include="scenes\DrawTMTSceneTransitionRecorder.cpp" />
+    <ClCompile Include="scenes\TMTSceneTemplateController.cpp" />
+    <ClCompile Include="scenes\TMTSceneTransitionRecorder.cpp" />
+    <ClCompile Include="util\FileUtilExtend.cpp" />
+    <ClCompile Include="util\MathUtilExtend.cpp" />
+    <ClCompile Include="util\MotionTrajectory.cpp" />
+    <ClCompile Include="util\PathApproximator.cpp" />
+    <ClCompile Include="util\PathFollower.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\anim\Character.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\anim\KinCharacter.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\anim\KinTree.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\anim\Motion.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\anim\Shape.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\Camera.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\DrawCharacter.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\DrawGround.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\DrawKinTree.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\DrawMesh.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\DrawObj.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\DrawPerturb.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\DrawSimCharacter.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\DrawUtil.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\DrawWorld.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\GraphUtil.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\IBuffer.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\lodepng\lodepng.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\lodepng\lodepng_util.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\MatrixStack.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\MeshUtil.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\ObjLoader.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\RenderState.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\Shader.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\ShadowMap.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\TextureDesc.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\TextureUtil.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\render\VertexBuffer.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\scenes\DrawRLScene.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\scenes\DrawSceneImitate.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\scenes\DrawSceneKinChar.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\scenes\DrawSceneSimChar.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\scenes\RLScene.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\scenes\RLSceneSimChar.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\scenes\SceneImitate.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\scenes\SceneKinChar.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\scenes\Scene.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\scenes\DrawScene.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\scenes\SceneBuilder.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\scenes\SceneSimChar.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\ActionSpace.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\AgentRegistry.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\CharController.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\ExpPDController.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\ObjTracer.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\ContactManager.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\Controller.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\CtController.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\CtCtrlUtil.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\CtPDController.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\CtVelController.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\Ground.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\GroundBuilder.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\GroundPlane.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\ImpPDController.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\MultiBody.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\PerturbManager.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimBodyJoint.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\PDController.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\Perturb.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\RBDModel.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\RBDUtil.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimBox.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimCapsule.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimCharacter.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimCharBuilder.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimCharGeneral.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimBodyLink.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimJoint.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimCylinder.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimObj.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimPlane.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimRigidBody.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SimSphere.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\SpAlg.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\DeepMimicCharController.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\CtrlBuilder.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\sim\World.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\DeepMimicCore.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\Annealer.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\ArgParser.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\CircularBuffer.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\FileUtil.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\IndexBuffer.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\IndexManager.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\JsonUtil.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\json\allocator.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\json\assertions.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\json\autolink.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\json\config.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\json\features.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\json\forwards.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\json\json.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\json\json_tool.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\json\reader.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\json\value.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\json\version.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\json\writer.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\MathUtil.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\Rand.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\Timer.h" />
+    <ClInclude Include="..\..\DeepMimic\DeepMimicCore\util\Trajectory.h" />
+    <ClInclude Include="anim\CarlKinCharacter.h" />
+    <ClInclude Include="anim\CarlKinTree.h" />
+    <ClInclude Include="CarlCore.h" />
+    <ClInclude Include="render\DrawCharacterExtend.h" />
+    <ClInclude Include="render\DrawKinTreeExtend.h" />
+    <ClInclude Include="render\DrawUtilExtend.h" />
+    <ClInclude Include="render\MeshUtilExtend.h" />
+    <ClInclude Include="scenes\CarlRLScene.h" />
+    <ClInclude Include="scenes\CarlRLSceneSimChar.h" />
+    <ClInclude Include="scenes\CarlSceneKinChar.h" />
+    <ClInclude Include="scenes\CarlSceneTaskHeading.h" />
+    <ClInclude Include="scenes\CarlSceneTaskImitate.h" />
+    <ClInclude Include="scenes\CarlSceneTaskSpeed.h" />
+    <ClInclude Include="scenes\DrawCarlRLScene.h" />
+    <ClInclude Include="scenes\DrawCarlScene.h" />
+    <ClInclude Include="scenes\DrawCarlSceneKinChar.h" />
+    <ClInclude Include="scenes\DrawCarlSceneTaskHeading.h" />
+    <ClInclude Include="scenes\DrawCarlSceneTaskImitate.h" />
+    <ClInclude Include="scenes\DrawCarlSceneTaskSpeed.h" />
+    <ClInclude Include="scenes\DrawTMTSceneTemplateController.h" />
+    <ClInclude Include="scenes\DrawTMTSceneTransitionRecorder.h" />
+    <ClInclude Include="scenes\TMTSceneTemplateController.h" />
+    <ClInclude Include="scenes\TMTSceneTransitionRecorder.h" />
+    <ClInclude Include="util\FileUtilExtend.h" />
+    <ClInclude Include="util\MathUtilExtend.h" />
+    <ClInclude Include="util\MotionTrajectory.h" />
+    <ClInclude Include="util\PathApproximator.h" />
+    <ClInclude Include="util\PathFollower.h" />
+    <ClInclude Include="util\tqdm.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="DeepMimicCore.i">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Swig|x64'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Swig|Win32'">echo PYTHON_INCLUDE: %PYTHON_INCLUDE%
+echo PYTHON_LIB: %PYTHON_LIB%
+echo SWIG_DIR: %SWIG_DIR%
+echo on
+$(SWIG_DIR)\swig.exe -c++ -python -o $(ProjectName)_wrap.cpp  $(ProjectName).i</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Swig|Win32'">$(ProjectName)_wrap.cxx;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Swig|x64'">echo PYTHON_INCLUDE: %PYTHON_INCLUDE%
+echo PYTHON_LIB: %PYTHON_LIB%
+echo SWIG_DIR: %SWIG_DIR%
+echo on
+$(SWIG_DIR)\swig.exe -c++ -python -o $(ProjectName)_wrap.cpp  $(ProjectName).i</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Swig|x64'">$(ProjectName)_wrap.cxx;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
