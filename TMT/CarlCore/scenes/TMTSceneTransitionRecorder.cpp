@@ -354,11 +354,22 @@ void cTMTSceneTransitionRecorder::WriteCollectTransitionTrajectories(std::string
 	for (int i = start_idx; i < end_idx; ++i)
 	{
 		mTransitionSamples[i].losses_energy.clear();
+		mTransitionSamples[i].losses_energy.shrink_to_fit();
+
 		mTransitionSamples[i].speed_rewards.clear();
+		mTransitionSamples[i].speed_rewards.shrink_to_fit();
+
 		mTransitionSamples[i].heading_rewards.clear();
+		mTransitionSamples[i].heading_rewards.shrink_to_fit();
+
 		mTransitionSamples[i].height_rewards.clear();
+		mTransitionSamples[i].height_rewards.shrink_to_fit();
+
 		mTransitionSamples[i].positions.clear();
+		mTransitionSamples[i].positions.shrink_to_fit();
+
 		mTransitionSamples[i].foot_contacts.clear();
+		mTransitionSamples[i].foot_contacts.shrink_to_fit();
 	}
 }
 
