@@ -192,7 +192,7 @@ void cTMTSceneTransitionRecorder::OnEvaluationEnd()
 			std::string output_filename = mOutputFilename;
 			output_filename.replace(start_pos, replace_from.length(), replace_to);
 			WriteCollectTransitionTrajectories(output_filename, start_exp, end_exp);
-			printf("Write intermediate reusults to file %s (%d, %d)\n", output_filename.c_str(), start_exp, end_exp);
+			printf("Write intermediate results to file %s (%d, %d)\n", output_filename.c_str(), start_exp, end_exp);
 
 			if (end_exp >= mTransitionSamples.size())
 			{
